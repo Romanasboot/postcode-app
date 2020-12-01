@@ -1,14 +1,14 @@
-
 import './app.css';
+import Main from '../main/main';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container App">
       <header className="App-header">
-        
-        
-        <h2>Pašto kodu paieška</h2>
+        <h2>Pašto kodų paieška</h2>
       </header>
+        
+        <Main/>
 
     </div>
   );
