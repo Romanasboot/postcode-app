@@ -10,7 +10,8 @@ class Main extends Component {
     constructor(){
         super()
         this.state = {value: ''};
-        
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         
     }
     handleChange(event) {    this.setState({value: event.target.value});  }
@@ -24,7 +25,7 @@ class Main extends Component {
     onFormSubmit = (e) => {
         // const {value, setValue} = useState();
         // onInput = ({target:{value}}) => setValue(value);
-
+        
         let search ={miestas: MiestasItem.value,
                     street: GatveItem.value,
                     namas: NamasItem.value}
